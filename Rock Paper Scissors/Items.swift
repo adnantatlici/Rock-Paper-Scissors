@@ -9,7 +9,7 @@ import UIKit
 
 struct item {
     static var allValues = [
-    UIImage(named: "rock")!,
+        UIImage(named: "rock")!,
     UIImage(named: "paper")!,
     UIImage(named: "scissors")!
     ]

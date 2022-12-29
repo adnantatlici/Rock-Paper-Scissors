@@ -16,18 +16,17 @@ class ItemSelectionVC: UIViewController {
     
     var timer: Timer!
     var items: [UIImage] = item.allValues
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         startTimer()
-        
+
         for button in buttons {
             button.layer.cornerRadius = 8 
               }
-
-    }
     
+    }
     
     
     func startTimer() {
@@ -38,8 +37,14 @@ class ItemSelectionVC: UIViewController {
     
     @objc func showRandomItem() {
         itemImage.image = items.randomElement() ?? UIImage(named: "scissors")
-       
+       randomColor()
     }
+    
+    @objc func randomColor() {
+           self.view.backgroundColor = random()
+           
+           
+       }
     
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
@@ -53,6 +58,15 @@ class ItemSelectionVC: UIViewController {
         startTimer()
     }
     
+    
+    @objc  func random() -> UIColor {
+           return UIColor(
+            red:   .random(in: 0.5...1),
+                        green: .random(in: 0.5...1),
+                        blue:  .random(in: 0.5...1),
+                        alpha: 1.0
+           )
+       }
 }
 
 

@@ -70,6 +70,7 @@
                         <outlet property="stopButton" destination="xER-ff-GTX" id="3hT-Sp-qFU"/>
                         <outletCollection property="buttons" destination="xER-ff-GTX" collectionClass="NSMutableArray" id="1Hq-jb-RMr"/>
                         <outletCollection property="buttons" destination="YUr-ks-9sh" collectionClass="NSMutableArray" id="NLi-bb-7xf"/>
+                        <outletCollection property="buttons" destination="LvW-eP-ydq" collectionClass="NSMutableArray" id="Ows-fR-Vlb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
